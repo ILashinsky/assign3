@@ -4,7 +4,7 @@ import java.util.Random;
 class App {
     public static void main(String[] args){
         
-        for (int i = 0; i < 150; i++) {
+        for (int i = 0; i < 150000; i++) {
             System.out.println("The 10th term of the Fibonacci sequence is: " + fibn(rand()));
           }
 
@@ -26,7 +26,7 @@ class App {
 
     public static int rand(){
         Random rand = new Random();
-        int tmp = rand.nextInt(10000) + 5;
+        int tmp = rand.nextInt(10);
         return tmp;
 
     }
