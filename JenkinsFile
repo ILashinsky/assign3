@@ -1,15 +1,18 @@
 pipeline {
     agent any
+    tools{
+        maven 'Maven 3.9.5'
+    }
     stages {
         state('Test')
         {
             steps {
-                bat "C:\\Users\\ilash\Downloads\\apache-maven-3.9.5-bin\\apache-maven-3.9.5\\bin\\mvn test"
+                bat "mvn test"
             }
         }
         stage('Build') { 
             steps {
-                bat "C:\\Users\\ilash\Downloads\\apache-maven-3.9.5-bin\\apache-maven-3.9.5\\bin\\mvn build"
+                bat "mvn build"
             }
         }
     }
