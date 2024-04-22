@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh '/my-app mvn -B -DskipTests clean package' 
+                sh ' mvn -f /my-app/pom.xml -B -DskipTests clean package' 
             }
         }
     }
