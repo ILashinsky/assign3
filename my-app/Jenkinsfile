@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
-                sh './my-app/scriptsdeliver.sh' 
+                sh './my-app/scripts/deliver.sh' 
             }
         }
     }
