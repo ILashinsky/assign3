@@ -1,8 +1,12 @@
 package com.mycompany.app;
+import java.util.Random;
 
 class App {
     public static void main(String[] args){
-        System.out.println("The 10th term of the Fibonacci sequence is: " + fibn(10));
+        
+        for (int i = 0; i < 150; i++) {
+            System.out.println("The 10th term of the Fibonacci sequence is: " + fibn(rand()));
+          }
 
     }
 /**
@@ -13,5 +17,17 @@ class App {
     public static int fibn(int n){
         if (n <= 1) return n;
         return fibn(n - 1) + fibn(n - 2);
+    }
+
+    /**
+     * 
+     * @return
+     */
+
+    public static int rand(){
+        Random rand = new Random();
+        int tmp = rand.nextInt(10000) + 5;
+        return tmp;
+
     }
 }
