@@ -1,0 +1,15 @@
+{
+    "graalvm.installations": [
+        "c:\\Users\\ilash\\logs\\graalvm-jdk-17.0.11+7.1"
+    ],
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "c:\\Users\\ilash\\logs\\graalvm-jdk-17.0.11+7.1"
+        }
+    ],
+    "graalvm.home": "c:\\Users\\ilash\\logs\\graalvm-jdk-17.0.11+7.1",
+    "terminal.integrated.env.windows": {
+        "GRAALVM_HOME": "c:\\Users\\ilash\\logs\\graalvm-jdk-17.0.11+7.1"
+    }
+}
